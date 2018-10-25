@@ -14,7 +14,7 @@ public class HelloWorldController {
 	 */
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(value="name", defaultValue="World") String name) {
-    	System.out.println("Received greeting call, name: '" + name + "'!!!");
+    	System.out.println("Received greeting call, parameter [name]: '" + name + "'!!!");
         return String.format(template, name);
     }
 
